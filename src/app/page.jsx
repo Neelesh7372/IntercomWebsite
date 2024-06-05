@@ -54,7 +54,7 @@ import React, { useState, useEffect } from 'react';
 import { JitsiMeeting } from '@jitsi/react-sdk';
 
 const JitsiMeetComponent = () => {
-  const roomName = "YourRoomNameHere";
+  const roomName = "Intercom System";
   const domain = "meet.jit.si";
 
   const configOverwrite = {
@@ -65,7 +65,7 @@ const JitsiMeetComponent = () => {
     prejoinPageEnabled: false,
     enableWelcomePage: false,
     enableClosePage: true,
-    enableInsecureRoomNameWarning: false,
+    enableInsecureRoomNameWarning: true,
     enableNoisyMicDetection: true,
     resolution: 720,
 
@@ -85,8 +85,7 @@ const JitsiMeetComponent = () => {
   };
 
   const userInfo = {
-    displayName: "Guest",
-
+    displayName: "Stranger",
   };
 
   const [isMobile, setIsMobile] = useState(false);
