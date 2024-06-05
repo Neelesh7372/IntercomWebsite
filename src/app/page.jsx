@@ -58,8 +58,8 @@ const JitsiMeetComponent = () => {
   const domain = "meet.jit.si";
 
   const configOverwrite = {
-    startWithAudioMuted: true,
-    startWithVideoMuted: true,
+    startWithAudioMuted: false,
+    startWithVideoMuted: false,
     disableDeepLinking: true,
     disableThirdPartyRequests: true,
     prejoinPageEnabled: false,
